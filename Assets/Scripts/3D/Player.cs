@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
 
 		
 		Collider[] cols = Physics.OverlapSphere(transform.position + Vector3.down, 0.1f);
+
+		// Sprawdzamy czy wykrył więcej niż 1 obiekt, bo zawsze wykrywa gracza
 		if (cols.Length > 1)
 		{
 			Debug.Log(cols[0].name);

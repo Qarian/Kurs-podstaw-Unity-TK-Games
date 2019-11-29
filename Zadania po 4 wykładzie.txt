@@ -1,0 +1,12 @@
+2D:
+- dodać zmianę kąta odbicia piłeczki od paletki w zależności od miejsca kontaktu z nią
+- dodać zliczanie punktów (można użyć 2 różne triggery po bokach zamiast 1 po środku) (UI będziemy robili później)
+
+3D
+- zrobić poruszanie postaci korzystając z wbudowanego komponentu Character Controller
+- przekształcić skakanie by nie korzystało z AddForce
+- Zrobić inne sprawdzanie kolizji z ziemią:
+	easy - dodać trigger ustawiony poniżej postaci
+	normal - użyć raycastu
+- dodać layery do graczy i/lub ziemi i zastosować je w raycast/overlap
+- dodać moce Jedi moce - jak gracz naciśnie przycisk myszki, wysłać raycast z pozycji myszki w świat, jeżeli trafi w jakiś obiekt to odpowiednio go odepchnąć albo przyciągnąć do siebie w zalezności od tego czy wcisną LPM czy PPM (przyda się klasa Screen)
